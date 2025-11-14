@@ -34,6 +34,14 @@
   border-color: var(--accent);
 }
 
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+
 /* ========== Hero Image Component ========== */
 .hero-image {
   display: flex;
@@ -103,8 +111,9 @@
 }
 
 .project-card h3 {
-  font-size: 1.1r
+  font-size: 1.1rem;
 }
+
 
 
 /* ========== Typewriter Text Component ========== */

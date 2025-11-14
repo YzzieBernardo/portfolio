@@ -1,8 +1,14 @@
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
-  nav ul {
-    gap: 1rem;
-    flex-wrap: wrap;
+  .hero-buttons {
+    flex-direction: column;   
+    align-items: center;    
+  }
+
+  .hero-socials {
+    width: 100%;
+    justify-content: center; 
+    margin-top: 1rem;
   }
 }
 
@@ -32,6 +38,6 @@
     flex-direction: column;
     align-items: flex-start;
   }
-}
+
 
 
