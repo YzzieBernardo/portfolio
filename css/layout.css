@@ -38,6 +38,22 @@
   transform: translateY(-1px);
 }
 
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 4px 0;
+  background: var(--text-main);
+  transition: 0.2s ease;
+}
+
 /* ========== Section Layout ========== */
 .section {
   padding: 3.5rem 0;

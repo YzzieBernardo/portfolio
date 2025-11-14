@@ -69,14 +69,9 @@
 .hero-intro span {
   color: var(--accent);
   font-weight: 700;
-  font-size: 1.25rem;   
+  font-size: 1.25rem;
 }
 
-
-.hero-intro span {
-  color: var(--accent);
-  font-weight: 600;
-}
 
 .hero-name {
   font-size: clamp(2.5rem, 5vw, 3.4rem);
@@ -85,15 +80,4 @@
   margin-top: 0.1rem;     
   margin-bottom: 1.5rem;   
   line-height: 1;        
-}
-
-
-.hero-name span {
-  color: var(--accent);
-}
-
-.hero-subtitle {
-  color: var(--text-muted);
-  max-width: 480px;
-  margin-bottom: 1.9rem;
 }
