@@ -16,7 +16,7 @@
 .btn.primary {
   background-color: var(--accent);
   color: #0b1120;
-  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.45);
+  box-shadow: 0 12px 30px rgba(255, 94, 1, 0.45);
 }
 
 .btn.primary:hover {
@@ -105,3 +105,86 @@
 .project-card h3 {
   font-size: 1.1r
 }
+
+
+/* ========== Typewriter Text Component ========== */
+.typewriter #typing-text {
+  border-right: 2px solid var(--accent);
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* ========== Socials Text Component ========== */
+.hero-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;     /* distance from buttons */
+}
+
+.social-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.social-icon:hover {
+  background: var(--accent);
+  color: #000;
+  transform: translateY(-4px);
+}
+
+/* ========== Skills & Projects Tabs ========== */
+.tabs-wrapper {
+  margin: 2rem auto 0;
+  max-width: 600px;
+  display: flex;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 16px;
+  padding: 0.4rem;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 0.9rem 1.2rem;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--accent);
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, rgba(250, 204, 21, 0.1), rgba(250, 204, 21, 0.25));
+  color: var(--text-main);
+  border: 1px solid var(--accent);
+}
+
+.tab-content {
+  display: none;
+  margin-top: 2rem;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+

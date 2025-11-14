@@ -16,6 +16,9 @@
 </head>
 
   <script src="script/loader.js" defer></script>
+  <script src="script/typewriter.js" defer></script>
+  <script src="script/comingsoon.js" defer></script>
+  <script src="script/tabs.js" defer></script>
 
 <body>
 
@@ -38,7 +41,7 @@
     </div>
   </div>
 
-  <!-- ========== MAIN CONTENT (lahat ng dati mong laman) ========== -->
+  <!-- ========== MAIN CONTENT ========== -->
   <div id="main-content" class="hidden">
 
     <header class="navbar">
@@ -56,24 +59,41 @@
       </div>
     </header>
 
-    <section id="home" class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <p class="hero-tag">Junior Web Developer</p>
-          <h1>Hi, I'm <span>Yzzie</span>.</h1>
-          <p class="hero-subtitle">
-            I build simple, clean, and responsive websites using HTML, CSS, and JavaScript.
-          </p>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn primary">View Projects</a>
-            <a href="#contact" class="btn secondary">Contact Me</a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <img src="images/profile.jpg" alt="Yzzie Bernardo" />
-        </div>
+  <section id="home" class="hero">
+  <div class="container hero-content">
+    <div class="hero-left">
+      <div class="hero-avatar">
+        <img src="images/profile.jpg" alt="Yzzie Bernardo" />
       </div>
-    </section>
+    </div>
+
+    <div class="hero-text">
+      <p class="hero-intro">
+        Hi, I'm <span id="typing-role"></span>
+      </p>
+
+      <h1 class="hero-name">
+        YZZIE <span>BERNARDO</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        I build simple, clean, and responsive websites using HTML, CSS, and JavaScript.
+      </p>
+
+      <div class="hero-buttons">
+      <a href="#" class="btn primary" onclick="comingSoon()">Download CV</a>
+        <a href="#contact" class="btn secondary">Contact</a>
+        <div class="hero-socials">
+    <a href="#" class="social-icon">🌐</a>
+    <a href="https://www.linkedin.com/in/yzzie-bernardo-091b41398" class="social-icon" target="_blank">in</a>
+    <a href="https://github.com" class="social-icon" target="_blank">git</a>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <section id="about" class="section">
       <div class="container">
@@ -91,56 +111,71 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section alt">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">HTML</div>
-          <div class="skill-card">CSS</div>
-          <div class="skill-card">JavaScript</div>
-          <div class="skill-card">Responsive Design</div>
-          <div class="skill-card">VB.NET</div>
-          <div class="skill-card">C++</div>
-          <div class="skill-card">Git & GitHub</div>
-          <div class="skill-card">Basic UI Layouts</div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <p class="section-text center">
-          These are sample projects I'm working on. I’ll keep adding more as I learn and build.
-        </p>
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>Personal Portfolio Website</h3>
-            <p>
-              A responsive one-page portfolio to showcase my skills, projects, and contact details.
-              Built with HTML and CSS.
-            </p>
-            <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
-          </div>
-          <div class="project-card">
-            <h3>Coming Soon</h3>
-            <p>
-              Coming Soon
-            </p>
-            <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
-          </div>
-          <div class="project-card">
-            <h3>Coming Soon</h3>
-            <p>
-             Coming Soon
-            </p>
-            <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
-          </div>
+    <!-- Skills + Projects Tabs Section -->
+<section id="skills" class="section alt">
+  <div class="container">
+
+    <h2 class="section-title">Skills & Projects</h2>
+    <p class="section-text center">
+      Explore my current skills and the projects I'm working on.
+    </p>
+
+    <!-- TAB HEADER -->
+    <div class="tabs-wrapper">
+      <button class="tab-btn active" data-tab="skills-tab">
+        Skills
+      </button>
+      <button class="tab-btn" data-tab="projects-tab">
+        Projects
+      </button>
+    </div>
+
+    <!-- TAB CONTENT: SKILLS -->
+    <div class="tab-content active" id="skills-tab">
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Responsive Design</div>
+        <div class="skill-card">VB.NET</div>
+        <div class="skill-card">C++</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">Basic UI Layouts</div>
+      </div>
+    </div>
+
+    <!-- TAB CONTENT: PROJECTS -->
+    <div class="tab-content" id="projects-tab">
+      <p class="section-text center">
+        These are sample projects I'm working on. I’ll keep adding more as I learn and build.
+      </p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A responsive one-page portfolio to showcase my skills, projects, and contact details.
+            Built with HTML and CSS.
+          </p>
+          <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
+        </div>
+        <div class="project-card">
+          <h3>Coming Soon</h3>
+          <p>Coming Soon</p>
+          <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
+        </div>
+        <div class="project-card">
+          <h3>Coming Soon</h3>
+          <p>Coming Soon</p>
+          <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
         </div>
       </div>
-    </section>
+    </div>
+
+  </div>
+</section>
+
+
 
     <section id="contact" class="section alt">
       <div class="container contact-content">

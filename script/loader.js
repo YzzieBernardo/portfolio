@@ -1,26 +1,26 @@
-   document.addEventListener('DOMContentLoaded', () => {
-      const urlText = "https://yzziebernardo.github.io/"; 
-      const typingEl = document.getElementById('typing-url');
-      const preloader = document.getElementById('preloader');
-      const main = document.getElementById('main-content');
+document.addEventListener("DOMContentLoaded", () => {
+  const urlText = "www.yzziebernardo.dev";
+  const urlEl = document.getElementById("typing-url");
+  const preloader = document.getElementById("preloader");
+  const main = document.getElementById("main-content");
 
-      let index = 0;
-      const speed = 100; 
+  let i = 0;
 
-      function type() {
-        if (index < urlText.length) {
-          typingEl.textContent += urlText.charAt(index);
-          index++;
-          setTimeout(type, speed);
-        } else {
+  function typeURL() {
+    if (i < urlText.length) {
+      urlEl.textContent += urlText.charAt(i);
+      i++;
+      setTimeout(typeURL, 100);
+    } else {
+      setTimeout(() => {
+        preloader.classList.add("hide");
+        main.classList.remove("hidden");
+        main.classList.add("show");
 
-          setTimeout(() => {
-            preloader.classList.add('hide');
-            main.classList.remove('hidden');
-            main.classList.add('show');
-          }, 700);
-        }
-      }
+        document.dispatchEvent(new Event("preloaderDone"));
+      }, 700);
+    }
+  }
 
-      type();
-    });
+  typeURL();
+});
