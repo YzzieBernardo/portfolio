@@ -4,134 +4,170 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yzzie Bernardo | Junior Web Developer</title>
-  <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/preloader.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+
+
 </head>
+
+  <script src="script/loader.js" defer></script>
+
 <body>
-  <header class="navbar">
-    <div class="container nav-content">
-      <div class="logo">Yzzie Bernardo</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <section id="home" class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <p class="hero-tag">Junior Web Developer</p>
-        <h1>Hi, I'm <span>Yzzie</span>.</h1>
-        <p class="hero-subtitle">
-          I build simple, clean, and responsive websites using HTML, CSS, and JavaScript.
-        </p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
-        </div>
+  <!-- ========== PRELOADER ========== -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="loader-icons">
+        <span>logo</span>
+        <span>logo</span>
+        <span>logo</span>
+         <span>logo</span>
       </div>
-      <div class="hero-image">
-        <img src="images/profile.jpg" alt="Yzzie Bernardo" />
-      </div>
-    </div>
-  </section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <p class="section-text">
-        I'm a Junior Web Developer who enjoys building simple and functional websites.
-        I work mainly with HTML, CSS, and JavaScript to create basic web pages, UI layouts,
-        and small features. I also have experience with VB.NET and C++ for simple desktop projects.
-      </p>
-      <p class="section-text">
-        Right now, I'm focused on improving my front-end skills by creating personal projects,
-        learning best practices, and building a solid portfolio. I'm open to part-time, project-based,
-        or entry-level opportunities where I can grow and contribute.
+<h1>Hello<br><span>Welcome to my Portfolio</span></h1>
+
+
+      <p class="loader-url">
+        <span id="typing-url"></span>
       </p>
     </div>
-  </section>
+  </div>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section alt">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Responsive Design</div>
-        <div class="skill-card">VB.NET</div>
-        <div class="skill-card">C++</div>
-        <div class="skill-card">Git & GitHub</div>
-        <div class="skill-card">Basic UI Layouts</div>
+  <!-- ========== MAIN CONTENT (lahat ng dati mong laman) ========== -->
+  <div id="main-content" class="hidden">
+
+    <header class="navbar">
+      <div class="container nav-content">
+        <div class="logo">Yzzie Bernardo</div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <p class="section-text center">
-        These are sample projects I'm working on. I’ll keep adding more as I learn and build.
-      </p>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Personal Portfolio Website</h3>
-          <p>
-            A responsive one-page portfolio to showcase my skills, projects, and contact details.
-            Built with HTML and CSS.
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-tag">Junior Web Developer</p>
+          <h1>Hi, I'm <span>Yzzie</span>.</h1>
+          <p class="hero-subtitle">
+            I build simple, clean, and responsive websites using HTML, CSS, and JavaScript.
           </p>
-          <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Landing Page Concept</h3>
-          <p>
-            A simple landing page design for a fictional product or service. Focused on layout and clean UI.
-          </p>
-          <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
-        </div>
-        <div class="project-card">
-          <h3>JavaScript Mini App</h3>
-          <p>
-            A small JavaScript project like a to-do list or calculator to practice basic interactivity.
-          </p>
-          <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
+        <div class="hero-image">
+          <img src="images/profile.jpg" alt="Yzzie Bernardo" />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section alt">
-    <div class="container contact-content">
-      <div>
-        <h2 class="section-title">Contact</h2>
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
         <p class="section-text">
-          If you’d like to work with me or have a project idea, feel free to reach out.
+          I'm a Junior Web Developer who enjoys building simple and functional websites.
+          I work mainly with HTML, CSS, and JavaScript to create basic web pages, UI layouts,
+          and small features. I also have experience with VB.NET and C++ for simple desktop projects.
+        </p>
+        <p class="section-text">
+          Right now, I'm focused on improving my front-end skills by creating personal projects,
+          learning best practices, and building a solid portfolio. I'm open to part-time, project-based,
+          or entry-level opportunities where I can grow and contribute.
         </p>
       </div>
-      <div class="contact-actions">
-        <a href="mailto:janyzziebernardo.work@gmail.com" class="btn primary">Email Me</a>
-        <div class="contact-links">
-          <a href="https://www.linkedin.com/in/yzzie-bernardo-091b41398" target="_blank">LinkedIn</a>
-          <a href="https://www.upwork.com/freelancers/~01b464f78be9f5f60c" target="_blank">Upwork</a>
-          <a href="https://ph.jobstreet.com/profile/me" target="_blank">JobStreet</a>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Responsive Design</div>
+          <div class="skill-card">VB.NET</div>
+          <div class="skill-card">C++</div>
+          <div class="skill-card">Git & GitHub</div>
+          <div class="skill-card">Basic UI Layouts</div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Yzzie Bernardo. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-text center">
+          These are sample projects I'm working on. I’ll keep adding more as I learn and build.
+        </p>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              A responsive one-page portfolio to showcase my skills, projects, and contact details.
+              Built with HTML and CSS.
+            </p>
+            <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
+          </div>
+          <div class="project-card">
+            <h3>Landing Page Concept</h3>
+            <p>
+              A simple landing page design for a fictional product or service. Focused on layout and clean UI.
+            </p>
+            <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
+          </div>
+          <div class="project-card">
+            <h3>JavaScript Mini App</h3>
+            <p>
+              A small JavaScript project like a to-do list or calculator to practice basic interactivity.
+            </p>
+            <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container contact-content">
+        <div>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-text">
+            If you’d like to work with me or have a project idea, feel free to reach out.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:janyzziebernardo.work@gmail.com" class="btn primary">Email Me</a>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/yzzie-bernardo-091b41398" target="_blank">LinkedIn</a>
+            <a href="https://www.upwork.com/freelancers/~01b464f78be9f5f60c" target="_blank">Upwork</a>
+            <a href="https://ph.jobstreet.com/profile/me" target="_blank">JobStreet</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Yzzie Bernardo. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
 
 </body>
 </html>
