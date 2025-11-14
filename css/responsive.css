@@ -1,9 +1,10 @@
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
-  .nav-links {
+  nav ul {
     gap: 1rem;
-    font-size: 0.9rem;
+    flex-wrap: wrap;
   }
+}
 
   .hero {
     padding-top: 3rem;
@@ -32,3 +33,5 @@
     align-items: flex-start;
   }
 }
+
+
