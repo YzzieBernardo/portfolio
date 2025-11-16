@@ -29,7 +29,6 @@
     display: flex;
   }
 
-  /* HERO SECTION */
   .hero {
     padding-top: 3rem;
   }
@@ -39,24 +38,22 @@
     text-align: center;
   }
 
-.hero-socials {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  align-self: flex-start; 
-  margin-top: 0.75rem;
-}
+  .hero-text {
+    align-items: center;
+  }
 
+  .hero-name {
+    text-align: center;
+  }
 
-  .hero-name,
-  .hero-intro,
-  .hero-subtitle {
+  .hero-intro {
     text-align: center;
   }
 
   .hero-subtitle {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   .hero-buttons {
@@ -64,20 +61,31 @@
   }
 
   .hero-socials {
-    display: flex;
-    gap: 12px;
-    justify-content: center;   
-    margin-top: 1rem;          
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-image {
     order: -1;
   }
 
-
   .contact-content {
     flex-direction: column;
     align-items: flex-start;
   }
 
+    #contact .contact-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-actions {
+    align-items: flex-start;
+  }
+
 }
+
+
+
+

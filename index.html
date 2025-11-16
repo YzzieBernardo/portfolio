@@ -75,8 +75,10 @@
           </div>
         </div>
 
-        <div class="hero-text">
-          <p class="hero-intro">Hi, I'm <span>Junior Web Developer</span></p>
+     <div class="hero-text">
+      <p class="hero-intro">
+        Hi, I'm <span id="typing-role"></span>
+      </p>
 
           <h1 class="hero-name">
             YZZIE BERNARDO
@@ -184,25 +186,48 @@
     </section>
 
 
+<section id="contact" class="section alt">
+  <div class="container contact-content">
 
-    <section id="contact" class="section alt">
-      <div class="container contact-content">
-        <div>
-          <h2 class="section-title">Contact</h2>
-          <p class="section-text">
-            If you’d like to work with me or have a project idea, feel free to reach out.
-          </p>
-        </div>
-        <div class="contact-actions">
-          <a href="mailto:janyzziebernardo.work@gmail.com" class="btn primary">Email Me</a>
-          <div class="contact-links">
-            <a href="https://www.linkedin.com/in/yzzie-bernardo-091b41398" target="_blank">LinkedIn</a>
-            <a href="https://www.upwork.com/freelancers/~01b464f78be9f5f60c" target="_blank">Upwork</a>
-            <a href="https://ph.jobstreet.com/profile/me" target="_blank">JobStreet</a>
-          </div>
-        </div>
+    <div class="contact-left">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-text">
+        If you’d like to work with me or have a project idea, feel free to reach out.
+      </p>
+    </div>
+
+<form class="contact-form" action="https://formspree.io/f/xjkjakvn" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+  <input type="text" name="_gotcha" style="display:none">
+
+  <button type="submit" class="btn primary">Send Message</button>
+</form>
+
+
+
+      <div class="contact-socials">
+        <a href="https://www.upwork.com/freelancers/~01b64fd78be9f5f60c" class="social-icon" target="_blank">
+          <img src="images/upwork.png" alt="Upwork" class="upwork-icon">
+        </a>
+
+        <a href="https://www.linkedin.com/in/yzzie-bernardo-091b41398" class="social-icon" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://github.com/yzziebernardo" class="social-icon" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
       </div>
-    </section>
+    </div>
+
+  </div>
+</section>
+
+
+
 
     <footer class="footer">
       <div class="container">
