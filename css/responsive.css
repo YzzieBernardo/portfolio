@@ -29,6 +29,7 @@
     display: flex;
   }
 
+  /* HERO SECTION */
   .hero {
     padding-top: 3rem;
   }
@@ -38,22 +39,24 @@
     text-align: center;
   }
 
-  .hero-text {
-    align-items: center;
-  }
+.hero-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-self: flex-start; 
+  margin-top: 0.75rem;
+}
 
-  .hero-name {
-    text-align: center;
-  }
 
-  .hero-intro {
+  .hero-name,
+  .hero-intro,
+  .hero-subtitle {
     text-align: center;
   }
 
   .hero-subtitle {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
 
   .hero-buttons {
@@ -61,14 +64,16 @@
   }
 
   .hero-socials {
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    gap: 12px;
+    justify-content: center;   
+    margin-top: 1rem;          
   }
 
   .hero-image {
     order: -1;
   }
+
 
   .contact-content {
     flex-direction: column;

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const urlText = "www.yzziebernardo.dev";
+  const urlText = "janyzziebernardo.work@gmail.com";
   const urlEl = document.getElementById("typing-url");
   const preloader = document.getElementById("preloader");
   const main = document.getElementById("main-content");

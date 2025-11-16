@@ -1,106 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yzzie Bernardo | Junior Web Developer</title>
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/pages.css">
-<link rel="stylesheet" href="css/preloader.css">
-<link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-
-
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/preloader.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
-  <script src="script/loader.js" defer></script>
-  <script src="script/typewriter.js" defer></script>
-  <script src="script/comingsoon.js" defer></script>
-  <script src="script/tabs.js" defer></script>
-  <script src="script/nav.js" defer></script>
+<script src="script/loader.js" defer></script>
+<script src="script/typewriter.js" defer></script>
+<script src="script/comingsoon.js" defer></script>
+<script src="script/tabs.js" defer></script>
+<script src="script/nav.js" defer></script>
 
 <body>
 
   <!-- ========== PRELOADER ========== -->
   <div id="preloader">
-    <div class="loader-content">
-      <div class="loader-icons">
-        <span>logo</span>
-        <span>logo</span>
-        <span>logo</span>
-         <span>logo</span>
-      </div>
+    <div class="new-loader-content">
 
-<h1>Hello<br><span>Welcome to my Portfolio</span></h1>
+      <div class="loader-circle"></div>
 
+      <h1 class="loader-title">
+        Loading<br><span>Please wait…</span>
+      </h1>
 
       <p class="loader-url">
         <span id="typing-url"></span>
       </p>
+
     </div>
   </div>
+
 
   <!-- ========== MAIN CONTENT ========== -->
   <div id="main-content" class="hidden">
 
-<header class="navbar">
-  <div class="container nav-content">
-    <div class="logo">Yzzie Bernardo</div>
+    <header class="navbar">
+      <div class="container nav-content">
+        <div class="logo">Yzzie Bernardo</div>
 
-    <!-- HAMBURGER BUTTON -->
-    <button class="nav-toggle" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+        <!-- HAMBURGER BUTTON -->
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-  <section id="home" class="hero">
-  <div class="container hero-content">
-    <div class="hero-left">
-      <div class="hero-avatar">
-        <img src="images/profile.jpg" alt="Yzzie Bernardo" />
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <div class="hero-text">
-      <p class="hero-intro">
-        Hi, I'm <span id="typing-role"></span>
-      </p>
-
-      <h1 class="hero-name">
-        YZZIE <span>BERNARDO</span>
-      </h1>
-
-      <p class="hero-subtitle">
-        I build simple, clean, and responsive websites using HTML, CSS, and JavaScript.
-      </p>
-
-      <div class="hero-buttons">
-      <a href="#" class="btn primary" onclick="comingSoon()">Download CV</a>
-        <a href="#contact" class="btn secondary">Contact</a>
-        <div class="hero-socials">
-        <a href="#" class="social-icon">🌐</a>
-        <a href="https://www.linkedin.com/in/yzzie-bernardo-091b41398" class="social-icon" target="_blank">in</a>
-        <a href="https://github.com" class="social-icon" target="_blank">git</a>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-left">
+          <div class="hero-avatar">
+            <img src="images/profile.jpg" alt="Yzzie Bernardo" />
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+        <div class="hero-text">
+          <p class="hero-intro">Hi, I'm <span>Junior Web Developer</span></p>
+
+          <h1 class="hero-name">
+            YZZIE BERNARDO
+          </h1>
+
+          <p class="hero-subtitle">
+            I build simple, clean, and responsive websites using HTML, CSS, and JavaScript.
+          </p>
+
+
+          <div class="hero-socials">
+            <a href="https://www.upwork.com/freelancers/~01b64fd78be9f5f60c" class="social-icon" target="_blank">
+              <img src="images/upwork.png" alt="Upwork" class="upwork-icon">
+            </a>
+
+            <a href="https://www.linkedin.com/in/yzzie-bernardo-091b41398" class="social-icon" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://github.com/yzziebernardo" class="social-icon" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+    </section>
 
 
     <section id="about" class="section">
@@ -121,66 +122,66 @@
 
 
     <!-- Skills + Projects Tabs Section -->
-<section id="skills" class="section alt">
-  <div class="container">
+    <section id="skills" class="section alt">
+      <div class="container">
 
-    <h2 class="section-title">Skills & Projects</h2>
-    <p class="section-text center">
+        <h2 class="section-title">Skills & Projects</h2>
+        <p class="section-text center">
+        </p>
+
+        <!-- TAB HEADER -->
+        <div class="tabs-wrapper">
+          <button class="tab-btn active" data-tab="skills-tab">
+            Skills
+          </button>
+          <button class="tab-btn" data-tab="projects-tab">
+            Projects
+          </button>
+        </div>
+
+        <!-- TAB CONTENT: SKILLS -->
+        <div class="tab-content active" id="skills-tab">
+          <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Responsive Design</div>
+            <div class="skill-card">VB.NET</div>
+            <div class="skill-card">C++</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">Basic UI Layouts</div>
+          </div>
+        </div>
+
+        <!-- TAB CONTENT: PROJECTS -->
+        <div class="tab-content" id="projects-tab">
+          <p class="section-text center">
+            These are sample projects I'm working on. I’ll keep adding more as I learn and build.
           </p>
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                A responsive one-page portfolio to showcase my skills, projects, and contact details.
+                Built with HTML and CSS.
+              </p>
+              <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
+            </div>
+            <div class="project-card">
+              <h3>Coming Soon</h3>
+              <p>Coming Soon</p>
+              <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
+            </div>
+            <div class="project-card">
+              <h3>Coming Soon</h3>
+              <p>Coming Soon</p>
+              <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
+            </div>
+          </div>
+        </div>
 
-    <!-- TAB HEADER -->
-    <div class="tabs-wrapper">
-      <button class="tab-btn active" data-tab="skills-tab">
-        Skills
-      </button>
-      <button class="tab-btn" data-tab="projects-tab">
-        Projects
-      </button>
-    </div>
-
-    <!-- TAB CONTENT: SKILLS -->
-    <div class="tab-content active" id="skills-tab">
-      <div class="skills-grid">
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Responsive Design</div>
-        <div class="skill-card">VB.NET</div>
-        <div class="skill-card">C++</div>
-        <div class="skill-card">Git & GitHub</div>
-        <div class="skill-card">Basic UI Layouts</div>
       </div>
-    </div>
-
-    <!-- TAB CONTENT: PROJECTS -->
-    <div class="tab-content" id="projects-tab">
-      <p class="section-text center">
-        These are sample projects I'm working on. I’ll keep adding more as I learn and build.
-      </p>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Personal Portfolio Website</h3>
-          <p>
-            A responsive one-page portfolio to showcase my skills, projects, and contact details.
-            Built with HTML and CSS.
-          </p>
-          <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
-        </div>
-        <div class="project-card">
-          <h3>Coming Soon</h3>
-          <p>Coming Soon</p>
-          <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
-        </div>
-        <div class="project-card">
-          <h3>Coming Soon</h3>
-          <p>Coming Soon</p>
-          <a href="#" class="link-disabled">GitHub Link (coming soon)</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+    </section>
 
 
 
@@ -212,4 +213,5 @@
 
 
 </body>
+
 </html>
