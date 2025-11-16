@@ -212,7 +212,6 @@
 
 
 
-/* === CONTACT 2-COLUMN LAYOUT === */
 #contact .contact-content {
   display: flex;
   align-items: center;
@@ -220,21 +219,18 @@
   gap: 3rem;
 }
 
-/* LEFT SIDE (title + text) */
 .contact-left {
   flex: 1 1 45%;
 }
 
-/* RIGHT SIDE (form + socials) */
 .contact-actions {
   flex: 1 1 45%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 0.75rem; /* maliit lang gap para dikit yung socials sa button */
+  gap: 0.75rem; 
 }
 
-/* FORM */
 .contact-form {
   width: 100%;
   max-width: 420px;
