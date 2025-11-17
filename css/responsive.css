@@ -1,34 +1,6 @@
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
 
-
-  .nav-content {
-    height: 60px;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  nav {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    background: rgba(15, 23, 42, 0.98);
-    padding: 0.75rem 1.5rem 1rem;
-    display: none;
-    gap: 0.75rem;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
   .hero {
     padding-top: 3rem;
   }
@@ -86,6 +58,70 @@
 
 }
 
+
+/* ===== DESKTOP ===== */
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    position: static;
+    flex-direction: row;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 767.98px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+ .nav-main {
+    flex: 1;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0.75rem;  
+    flex-direction: column;
+    align-items: stretch;
+    width: 220px;
+    padding: 0.75rem 1rem 1rem;
+    border-radius: 1rem;
+    background: #0b1120;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.9);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .nav-item + .nav-item {
+    margin-top: 0.15rem;
+  }
+
+  .nav-link {
+    justify-content: flex-start;
+    padding: 0.65rem 0.75rem;
+    border-radius: 0.9rem;
+    color: #e5e7eb;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    background: #2563eb;
+    color: #ffffff;
+  }
+
+
+  .navbar.is-open .nav-links {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+}
 
 
 

@@ -44,28 +44,53 @@
   <!-- ========== MAIN CONTENT ========== -->
   <div id="main-content" class="hidden">
 
+    <!-- MOBILE TOP BAR -->
     <header class="navbar">
       <div class="container nav-content">
         <div class="logo">Yzzie Bernardo</div>
 
-        <!-- HAMBURGER BUTTON -->
+        <!-- TOP NAV LINKS -->
+        <nav class="nav-main">
+          <ul class="nav-links">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">
+                <i class="fa-solid fa-house"></i><span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                <i class="fa-solid fa-user"></i><span>About</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">
+                <i class="fa-solid fa-bolt"></i><span>Skills</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">
+                <i class="fa-solid fa-briefcase"></i><span>Projects</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">
+                <i class="fa-solid fa-envelope"></i><span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- HAMBURGER (MOBILE) -->
         <button class="nav-toggle" aria-label="Toggle navigation">
           <span></span>
           <span></span>
           <span></span>
         </button>
-
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
+
+
+
 
     <section id="home" class="hero">
       <div class="container hero-content">
@@ -75,10 +100,10 @@
           </div>
         </div>
 
-     <div class="hero-text">
-      <p class="hero-intro">
-        Hi, I'm <span id="typing-role"></span>
-      </p>
+        <div class="hero-text">
+          <p class="hero-intro">
+            Hi, I'm <span id="typing-role"></span>
+          </p>
 
           <h1 class="hero-name">
             YZZIE BERNARDO
@@ -186,54 +211,54 @@
     </section>
 
 
-<section id="contact" class="section alt">
-  <div class="container contact-content">
+    <section id="contact" class="section alt">
+      <div class="container contact-content">
 
-    <div class="contact-left">
-      <h2 class="section-title">Contact</h2>
-      <p class="section-text">
-        If you’d like to work with me or have a project idea, feel free to reach out.
-      </p>
-    </div>
+        <div class="contact-left">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-text">
+            If you’d like to work with me or have a project idea, feel free to reach out.
+          </p>
+        </div>
 
-<form class="contact-form" action="https://formspree.io/f/xjkjakvn" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <form class="contact-form" action="https://formspree.io/f/xjkjakvn" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
 
-  <input type="text" name="_gotcha" style="display:none">
+          <input type="text" name="_gotcha" style="display:none">
 
-  <button type="submit" class="btn primary">Send Message</button>
-</form>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
 
 
 
-      <div class="contact-socials">
-        <a href="https://www.upwork.com/freelancers/~01b64fd78be9f5f60c" class="social-icon" target="_blank">
-          <img src="images/upwork.png" alt="Upwork" class="upwork-icon">
-        </a>
+        <div class="contact-socials">
+          <a href="https://www.upwork.com/freelancers/~01b64fd78be9f5f60c" class="social-icon" target="_blank">
+            <img src="images/upwork.png" alt="Upwork" class="upwork-icon">
+          </a>
 
-        <a href="https://www.linkedin.com/in/yzzie-bernardo-091b41398" class="social-icon" target="_blank">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
+          <a href="https://www.linkedin.com/in/yzzie-bernardo-091b41398" class="social-icon" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
 
-        <a href="https://github.com/yzziebernardo" class="social-icon" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
+          <a href="https://github.com/yzziebernardo" class="social-icon" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
 
   </div>
-</section>
+  </section>
 
 
 
 
-    <footer class="footer">
-      <div class="container">
-        <p>© 2025 Yzzie Bernardo. All rights reserved.</p>
-      </div>
-    </footer>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Yzzie Bernardo. All rights reserved.</p>
+    </div>
+  </footer>
   </div>
 
 
